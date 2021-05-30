@@ -26,8 +26,8 @@ ADD genieacs.logrotate /etc/logrotate.d/genieacs
 
 WORKDIR /opt
 RUN git clone https://github.com/neir-bohara/Genieacs-service -b 1.2
-RUN cp genieacs-services/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-RUN cp genieacs-services/run_with_env.sh /usr/bin/run_with_env.sh
+RUN cp Genieacs-service/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+RUN cp Genieacs-service/run_with_env.sh /usr/bin/run_with_env.sh
 RUN chmod +x /usr/bin/run_with_env.sh
 
 WORKDIR /var/log/genieacs
